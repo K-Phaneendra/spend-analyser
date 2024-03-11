@@ -2,6 +2,19 @@
 use `adb devices` and copy the device name
 use `adb -s <device name> reverse tcp:8081 tcp:8081` to connect to the device
 
+# Release - Create .apk file
+
+### step 1:
+`npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
+
+### step 2:
+`cd android`
+
+### step 3:
+`./gradlew assembleDebug`
+
+APK file should be found in `./android/app/build/outputs/apk/debug/app-debug.apk`
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
