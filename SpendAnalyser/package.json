@@ -11,7 +11,12 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.73.5"
+    "react-native": "0.73.5",
+    "react-native-android-sms-listener": "^0.8.0",
+    "react-native-get-sms-android": "^2.1.0",
+    "react-native-gifted-charts": "^1.4.7",
+    "react-native-linear-gradient": "^2.8.3",
+    "react-native-svg": "^15.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
